@@ -1,29 +1,40 @@
-name: mings-base-docs
+name: Deploy VuePress to GitHub Pages
 
 on:
   push:
-    branches: [master] # 触发部署的分支
+    branches: [master]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build VuePress
         run: npm run docs:build
 
-      - name: mings-base-docs
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/.vuepress/dist  # VuePress 输出目录
-          keep_files: false  # 是否保留 gh-pages 分支的旧文件
+          publish_dir: ./docs/.vuepress/dist
+          keep_files: false
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
