@@ -4,7 +4,7 @@ heroImage: null
 heroText: mings-base-frame
 tagline: 基于vite/webpack构建的前端基础框架
 actionText: 开发文档
-actionLink: /guide/
+actionLink: /guide/what-is-mings-base-frame/
 features:
   - title: 简单
     details: 开箱即用
