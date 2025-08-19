@@ -1,3 +1,7 @@
+---
+redirectFrom: /
+---
+
 # mings-base-frame
 
 mings-base-frame 是一个基于 vite/webpack 构建的满足公司业务需求的前端基础框架，目的是帮助前端开发及工程师快速搭建项目，提高开发效率，统一整个前端开发规范。
