@@ -5,7 +5,7 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: "首页", link: "/" },
-      { text: "文档", link: "/guide/" },
+      { text: "文档", link: "/guide/what-is-mings-base-frame/" },
     ],
     sidebar: [
       {
