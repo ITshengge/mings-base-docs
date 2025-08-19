@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/mings-base-docs/',
   title: "mings-base-frame",
   description: "基于vite/webpack构建的前端基础框架",
   themeConfig: {
