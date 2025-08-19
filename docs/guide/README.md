@@ -3,9 +3,9 @@ sidebar: false
 ---
 
 <script setup>
-if (typeof window !== 'undefined') {
-  window.location.href = '/guide/what-is-mings-base-frame.html'
-}
+// if (typeof window !== 'undefined') {
+//   window.location.href = '/guide/what-is-mings-base-frame.html'
+// }
 </script>
 
 <!-- # 简介
