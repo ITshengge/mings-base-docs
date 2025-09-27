@@ -1,0 +1,1 @@
+import{c as e,o as t}from"./chunks/framework.DgsVuIzJ.js";const s=JSON.parse('{"title":"","description":"","frontmatter":{"sidebar":false},"headers":[],"relativePath":"component/README.md","filePath":"component/README.md"}'),a={name:"component/README.md"},m=Object.assign(a,{setup(o){return(n,c)=>(t(),e("div"))}});export{s as __pageData,m as default};
